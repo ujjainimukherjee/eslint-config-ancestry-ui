@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
-    "eslint": ">= 3",
-    "eslint-plugin-this": "^0.2.2"
+    "eslint": ">= 3"
+   
   },
   "keywords": [
     "eslint",
