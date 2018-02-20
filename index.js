@@ -2,8 +2,7 @@ module.exports = {
 	"parser": "babel-eslint",
    
     "rules": {
-        // 0 = off, 1 = warning, 2 = error (you passed "3").
-        "arrow-parens": ["error", "as-needed"],
+       "arrow-parens": ["error", "as-needed"],
        "class-methods-use-this": "off",
        "curly": ["error", "all"], // OPTIONAL, MULTI/NEST ??? https://eslint.org/docs/rules/curly
        "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
