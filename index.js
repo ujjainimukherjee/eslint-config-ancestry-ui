@@ -3,10 +3,7 @@ module.exports = {
         "document": true,
         "window": true
     },
-    "env":{
-        "browser":true, // so that we can get setTimeout and clear Timeout ????
-        "es6":true // es6 features  like promise
-	},
+    
     "rules": {
         // 0 = off, 1 = warning, 2 = error (you passed "3").
         "arrow-parens": ["error", "as-needed"],
