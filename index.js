@@ -1,4 +1,5 @@
 module.exports = {
+	"parser": "babel-eslint",
    
     "rules": {
         // 0 = off, 1 = warning, 2 = error (you passed "3").
