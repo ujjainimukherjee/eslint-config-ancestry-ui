@@ -39,9 +39,9 @@ module.exports = {
         "args": "after-used", // DEFUALT
         "varsIgnorePattern": "^ui$" // WHEN NEEDED
     }],
-"no-unused-expressions": "error",	    
+"no-unused-expressions": "error", // dirty-chai can be installed to stop errors for unit tests	    
 	    
-	    
+	 
     "spaced-comment": ["error", "always", { "exceptions": ["*"] }] // ?? OPTIONAL
    
      }
