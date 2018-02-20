@@ -36,6 +36,7 @@ module.exports = {
         "args": "after-used", // DEFUALT
         "varsIgnorePattern": "^ui$" // WHEN NEEDED
     }],
+	   // "no-unused-expressions": "error", need to work with chai friendly
 
 	    
 	    
