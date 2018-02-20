@@ -1,44 +1,45 @@
 module.exports = {
-    rules: {
-		"arrow-parens": ["error", "as-needed"],
-		"brace-style": ["error", "1tbs"],
-		"class-methods-use-this": "off",
-		"comma-dangle": ["error", "never"],
-		"consistent-return": "off",
-		"curly": ["error", "all"],
-		"no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
-		"indent": ["error", "tab", { "SwitchCase": 1 }],
-		"import/extensions": ["error", "always", { "js": "never", "packages": "never" }],
-		"max-len": "off",
-		"no-bitwise": "off",
-		"no-console": ["error"],
-		"no-continue": "off",
-		"no-extra-parens": ["error", "all", {
-			"nestedBinaryExpressions": false
-		}],
-		"no-mixed-operators": ["error", {
-			"groups": [
-				["+", "-", "*", "/", "%", "**"],
-				["&", "|", "^", "~", "<<", ">>", ">>>"],
-				["==", "!=", "===", "!==", ">", ">=", "<", "<="],
-				["&&", "||"],
-				["in", "instanceof"]
-			],
-			"allowSamePrecedence": true
-		}],
-		"no-param-reassign": ["error", { "props": false }],
-		"no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
-		"no-prototype-builtins": "off",
-		"no-restricted-syntax": ["error", "DebuggerStatement", "LabeledStatement", "WithStatement"],
-		"no-tabs": "off",
-		"no-underscore-dangle": "off",
-		"no-unused-expressions": 0,
-		"chai-friendly/no-unused-expressions": 2,
-		"no-unused-vars": ["error", {
-			"vars": "local",
-			"args": "after-used",
-			"varsIgnorePattern": "^ui$"
-		}],
-		"spaced-comment": ["error", "always", { "exceptions": ["*"] }]
-	}
+    "globals": {
+        "document": true,
+        "window": true
+    },
+    "env":{
+        "browser":true, // so that we can get setTimeout and clear Timeout ????
+        "es6":true // es6 features  like promise
+	},
+    "rules": {
+        // 0 = off, 1 = warning, 2 = error (you passed "3").
+        "arrow-parens": ["error", "as-needed"],
+       "class-methods-use-this": "off",
+       "curly": ["error", "all"], // OPTIONAL, MULTI/NEST ??? https://eslint.org/docs/rules/curly
+       "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
+        "max-len": "off",
+        "no-continue": "off",
+    	"no-extra-parens": ["error", "all", {
+        "nestedBinaryExpressions": false
+    }],
+    "no-mixed-operators": ["error", {
+        "groups": [
+            ["+", "-", "*", "/", "%", "**"],
+            ["&", "|", "^", "~", "<<", ">>", ">>>"],
+            ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
+            ["&&", "||"],
+            ["in", "instanceof"]
+        ],
+        "allowSamePrecedence": true
+    }],
+    "no-param-reassign": ["error", { "props": false }],
+    "no-prototype-builtins": "off",
+    "no-restricted-syntax": ["error", "DebuggerStatement", "LabeledStatement", "WithStatement"],
+    "no-tabs": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-expressions": "error", 
+     "no-unused-vars": ["error", {
+        "vars": "local", // WHY? 
+        "args": "after-used", // DEFUALT
+        "varsIgnorePattern": "^ui$" // WHEN NEEDED
+    }],
+    "spaced-comment": ["error", "always", { "exceptions": ["*"] }] // ?? OPTIONAL
+   
+     }
 }
