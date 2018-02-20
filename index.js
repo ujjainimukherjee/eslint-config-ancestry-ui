@@ -33,12 +33,10 @@ module.exports = {
         "varsIgnorePattern": "^ui$" // WHEN NEEDED
     }],
 	   // "no-unused-expressions": "error", need to work with chai friendly
-
+    "spaced-comment": ["error", "always", { "exceptions": ["*"] }], // ?? OPTIONAL
+	    // NEW RULES
+	    "arrow-spacing": ["error", { "before": true, "after": true }]
 	    
-	    
-	    
-	 
-    "spaced-comment": ["error", "always", { "exceptions": ["*"] }] // ?? OPTIONAL
    
      }
 }
