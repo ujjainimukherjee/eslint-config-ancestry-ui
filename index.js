@@ -34,7 +34,7 @@ module.exports = {
     "no-restricted-syntax": ["error", "DebuggerStatement", "LabeledStatement", "WithStatement"],
     "no-tabs": "off",
     "no-underscore-dangle": "off",
-    "no-unused-expressions": "error", 
+    "no-unused-expressions": "off",  // used only for tests
      "no-unused-vars": ["error", {
         "vars": "local", // WHY? 
         "args": "after-used", // DEFUALT
