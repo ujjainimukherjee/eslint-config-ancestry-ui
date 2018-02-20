@@ -39,6 +39,9 @@ module.exports = {
         "args": "after-used", // DEFUALT
         "varsIgnorePattern": "^ui$" // WHEN NEEDED
     }],
+"no-unused-expressions": "error",	    
+	    
+	    
     "spaced-comment": ["error", "always", { "exceptions": ["*"] }] // ?? OPTIONAL
    
      }
