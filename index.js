@@ -7,6 +7,7 @@ module.exports = {
        "curly": ["error", "all"], // OPTIONAL, MULTI/NEST ??? https://eslint.org/docs/rules/curly
        "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
         "max-len": "off",
+	    "no-console":"error",
         "no-continue": "off",
 	    	"no-extra-parens": ["error", "all", {
         "nestedBinaryExpressions": false
