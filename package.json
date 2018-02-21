@@ -7,18 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
     "devDependencies": {
-    "eslint": ">= 4.18.0",
+    "eslint": ">= 4.18.0"
       
-      "eslint-config-standard": "11.*.*"
+      
    
   },
   "peerDependencies": {
-     "eslint": ">= 4.18.0",
-      "eslint-config-standard": "11.*.*",
-    "eslint-plugin-import": ">=2.8.0",
-    "eslint-plugin-node": ">=5.2.1",
-    "eslint-plugin-promise": ">=3.6.0",
-    "eslint-plugin-standard": ">=3.0.1"
+     "eslint": ">= 4.18.0"
+     
      
     
   },
