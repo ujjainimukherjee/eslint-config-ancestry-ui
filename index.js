@@ -8,8 +8,7 @@ module.exports = {
        "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }],
         "max-len": "off",
         "no-continue": "off",
-	"no-console": "off",    
-    	"no-extra-parens": ["error", "all", {
+	    	"no-extra-parens": ["error", "all", {
         "nestedBinaryExpressions": false
     }],
     "no-mixed-operators": ["error", {
