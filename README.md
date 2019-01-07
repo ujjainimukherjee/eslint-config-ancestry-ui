@@ -1,6 +1,6 @@
 # eslint-config-ancestry-ui
 
-nstallation instructions
+Installation instructions
 Install this module (it's not an npm module).
 $ npm install --save-dev git+https://github.com/ujjainimukherjee/eslint-config-ancestry-ui.git
 
